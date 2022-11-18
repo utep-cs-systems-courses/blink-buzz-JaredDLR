@@ -12,5 +12,5 @@ void __interrupt_vec(PORT2_VECTOR) Port_2() {
 
 /* 250 interrupts per second */
 void __interrupt_vec(WDT_VECTOR) WDT() {
-  watchdog_interrupt_handler();
+  advance_state();
 }

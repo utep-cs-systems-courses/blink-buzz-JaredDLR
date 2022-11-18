@@ -7,7 +7,7 @@
 void main(void) 
 {  
   configureClocks();	/* setup master oscillator, CPU & peripheral clocks */
-  enabledWDTInterrups();	/* enable periodic interrups */
+  enableWDTInterrupts();	/* enable periodic interrups */
   switch_init();
   led_init();
   buzzer_init();

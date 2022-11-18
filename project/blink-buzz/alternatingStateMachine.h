@@ -2,5 +2,6 @@
 #define alternatingStateMachine_included
 
 void advance_alternation();
+void reset_alternation();
 
 #endif

@@ -11,7 +11,7 @@ AS              = msp430-elf-as
 all: button.elf 
 
 #additional rules for files
-button.elf: ${COMMON_OBJECTS} buzzer.o led.o switches.o alternatingStateMachine.o metalCrusherStateMachine.o interrupt_handler.o buttonMain.o ../lib/libTimer.a
+button-c.elf: ${COMMON_OBJECTS} buzzer.o led.o switches.o alternatingStateMachine.o metalCrusherStateMachine.o sirenStateMachine.o blinkingStateMachine.o stateMachine.o interrupt_handler.o buttonMain.o ../lib/libTimer.a
 	${CC} ${CFLAGS} ${LDFLAGS} -o $@ $^
 
 load: button.elf
